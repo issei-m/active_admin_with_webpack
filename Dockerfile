@@ -1,7 +1,6 @@
 # syntax = docker/dockerfile:1.3-labs
 
 FROM ruby:3.2-slim
-COPY Gemfile* ./
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
     TZ=Asia/Tokyo \
