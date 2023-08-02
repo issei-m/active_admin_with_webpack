@@ -1,6 +1,7 @@
 services:
   app:
     build: .
+    command: bash -c "rails db:migrate && rails db:seed && rails s -b 0.0.0.0"
     environment:
       - "RAILS_ASSET_HOST=//localhost:${WEBPACK_DEV_SERVER_PORT:-8080}"
     ports:
